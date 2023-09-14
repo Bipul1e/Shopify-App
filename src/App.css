@@ -1,38 +1,73 @@
+/* App.css */
+
 .App {
+  font-family: Arial, sans-serif;
   text-align: center;
+  margin: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  color: #333;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.chocolates-list {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.chocolate {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  max-width: 550px;
+  background-color: #f9f9f9;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.chocolate p {
+  margin: 0;
+}
+
+.chocolate button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.custom-pack {
+  margin-top: 30px;
+}
+
+.selected-chocolates {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.selected-chocolate {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  max-width: 550px;
+  background-color: #f9f9f9;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.selected-chocolate p {
+  margin: 0;
+}
+
+.selected-chocolate button {
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
 }
